@@ -12,5 +12,6 @@
 
 
 ![Primestack](./resources/images/primestack.png)
--- image provided by **JonesTown**
+
+-- image provided by [**JonesTown**](https://twitter.com/TF_JonesTown)
 
