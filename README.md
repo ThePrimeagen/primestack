@@ -1,8 +1,17 @@
 <div align="center">
 
 # Primestack
-##### The best tech stack to ever be stacked!
+##### From rust to tailwind. The tech stack for Leptos.
+
+
+[![Leptos](https://img.shields.io/badge/Leptos-EF3939.svg?style=for-the-badge&logoColor=white&logo=leptos)](https://github.com/leptos-rs/leptos)
+[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![crates.io](https://img.shields.io/crates/v/cargo-primestack.svg?style=for-the-badge&colorA=orange&color=white&label=crate&logo=rust)](https://crates.io/crates/cargo-primestack)
+
 </div>
 
-![Primestack](https://user-images.githubusercontent.com/60197499/215845158-8870221b-6491-4243-bae5-4e7abc409d95.png)
--- image provided by **21st-centuryman**
+
+![Primestack](./resources/images/primestack.png)
+
+-- image provided by [**JonesTown**](https://github.com/blushell)
+
