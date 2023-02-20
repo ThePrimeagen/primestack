@@ -13,5 +13,5 @@
 
 ![Primestack](./resources/images/primestack.png)
 
--- image provided by [**JonesTown**](https://github.com/blushell)
+-- image provided by [**JonesTown**](https://github.com/blushell) & [**21st Century Man**](https://github.com/21st-centuryman)
 
