@@ -10,3 +10,4 @@ homepage = "https://twitch.tv/ThePrimeagen"
 anyhow = "1.0.69"
 walkdir = "2.3.2"
 serde_json = "1.0.67"
+clap = { version = "4.2.4", features = ["derive"] }
