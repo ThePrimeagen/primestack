@@ -1,3 +1,5 @@
+#![feature(fs_try_exists)]
+
 mod project;
 mod input;
 mod opts;
@@ -5,15 +7,16 @@ mod opts;
 use anyhow::Result;
 
 use clap::Parser;
-use crate::{opts::Config, input::init};
+use crate::{opts::Config, input::init, project::setup_project};
 
 fn main() -> Result<()> {
     let mut config = Config::parse();
 
-    _ = match &mut config {
-        Config::Init(i) => init(i),
+    _ = match config {
+        Config::Init(i) => {
+            setup_project(dbg!(init(i)?));
+        }
     };
 
-    println!("config: {:?}", config);
     return Ok(());
 }

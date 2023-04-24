@@ -64,6 +64,31 @@ fn select_name(init: &mut Init) -> Result<()> {
     return Ok(());
 }
 
+fn select_turso(init: &mut Init) -> Result<()> {
+    if init.turso.is_some() {
+        return Ok(());
+    }
+
+    loop {
+        println!("Do you wish to include Turso? (y/n)");
+
+        // read from stdin
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input)?;
+
+        if input == "y" {
+            init.turso = Some(true);
+            break;
+        } else if input == "n" {
+            init.turso = Some(false);
+            break;
+        }
+
+        println!("Invalid input");
+    }
+    return Ok(());
+}
+
 fn select_path(init: &mut Init) -> Result<()> {
     if init.path.is_some() {
         return Ok(());
@@ -89,10 +114,11 @@ fn select_path(init: &mut Init) -> Result<()> {
     return Ok(());
 }
 
-pub fn init(init: &mut Init) -> Result<()> {
-    _ = select_backend(init);
-    _ = select_name(init);
-    _ = select_path(init);
+pub fn init(mut init: Init) -> Result<Init> {
+    _ = select_backend(&mut init);
+    _ = select_name(&mut init);
+    _ = select_path(&mut init);
+    _ = select_turso(&mut init);
 
-    return Ok(());
+    return Ok(init);
 }
